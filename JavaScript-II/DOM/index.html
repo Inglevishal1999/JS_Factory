@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2 id="title">DOM Concept</h2>
+      <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus
+        fugiat quae assumenda placeat neque ratione deleniti dolorum qui labore
+        hic nobis provident consequatur commodi, ipsa tenetur velit dignissimos
+        porro perspiciatis ipsum eligendi doloribus nulla nostrum id. Vel ipsam
+        quam, ad, quae velit voluptates, aperiam accusantium veniam nobis
+        molestiae voluptas.
+      </p>
+      <button id="btn" onclick="chengeH2()">
+        change h2 content
+      </button>
+    </div>
+    <script>
+
+        function chengeH2 (){
+            var headingRef = document.getElementById('title');
+            var Paragph = document.getElementById('content');
+            var btnContent = document.getElementById('btn');
+            headingRef.innerText="DOM Manipulated Using JavaScript";
+            Paragph.innerText="In programming, parsing an HTML document means taking the raw HTML code and converting it into a structured format, usually a tree-like data structure called the Document Object Model (DOM). ";
+            btnContent.innerText="ChangeBtn"
+        }
+        
+        function fn(){
+            var x = 5;
+            var city ="Delhi"
+            if(x < 1000){
+                console.log("Do some operation")
+            }
+        }
+
+        fn()
+    </script>
+  </body>
+</html>
